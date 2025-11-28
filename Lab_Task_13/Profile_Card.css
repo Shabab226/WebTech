@@ -1,0 +1,49 @@
+
+.user-card {
+    position: relative;
+    width: 30px;
+    padding: 20px;
+    background-color: hsla(0, 16%, 80%, 0.762);
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+
+.profile-photo {
+    
+    width: 10%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-shadow: 0px 2px 7px rgb(0, 0, 0);
+    border-width: 2px;
+    border: 2px solid black;
+}
+
+.user-card h2 {
+    margin: 10px 0;
+    font-size: 20px;
+    color: #333;
+}
+
+.user-card p {
+    margin: 10px 0;
+    font-size: 14px;
+    color: #666;
+    line-height: 1.4;
+}
+
+.badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #4caf50;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}

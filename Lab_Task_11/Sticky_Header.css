@@ -1,0 +1,52 @@
+/* Header Styling */
+header {
+    position: sticky;
+    top: 0;
+    background-color: #2c3e50;
+    padding: 20px 0;
+    border-bottom: 3px solid #4593e1;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0 40px;
+    color: #ecf0f1;
+    font-size: 28px;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+    margin: 15px 40px 0 40px;
+}
+
+nav a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #72a9ce;
+}
+
+/* Main Content Styling */
+main {
+    margin-top: 20px;
+    padding: 40px;
+    max-width: 900px;
+    line-height: 1.8;
+    color: #333;
+}
+
+main h2 {
+    margin-top: 30px;
+    color: #2c3e50;
+}
+
+main p {
+    margin-bottom: 20px;
+    text-align: justify;
+}

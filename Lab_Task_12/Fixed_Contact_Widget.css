@@ -1,0 +1,39 @@
+.contact-widget {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    background-color: #1e5ea3;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    min-width: 200px;
+}
+
+.contact-widget h3 {
+    margin: 0 0 15px 0;
+    color: white;
+    font-size: 18px;
+}
+
+.contact-widget p {
+    margin: 10px 0;
+    color: white;
+    font-size: 14px;
+}
+
+.contact-widget a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.contact-widget a:hover {
+    text-decoration: underline;
+}
+
+.contact-widget:hover {
+    background-color: #0056b3;
+    cursor: pointer;
+    transition: 0.3s ease;
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>University Admission Form</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; max-width: 800px; margin: auto; }
+        fieldset { margin-bottom: 16px; padding: 12px; }
+        label { display: block; margin: 6px 0 2px; }
+        input[type="text"], input[type="email"], input[type="date"], select, textarea {
+            width: 100%; padding: 8px; box-sizing: border-box;
+        }
+        .inline { display: inline-block; margin-right: 12px; }
+        .small { width: 120px; display: inline-block; }
+        .buttons { margin-top: 12px; }
+    </style>
+</head>
+<body>
+    <h1>University Admission Form</h1>
+
+    <form action="#" method="post" enctype="multipart/form-data">
+        <!-- Personal Information -->
+        <fieldset>
+            <legend>Personal Info</legend>
+
+            <label for="firstName">First Name *</label>
+            <input id="firstName" name="firstName" type="text" maxlength="50" required />
+
+            <label for="lastName">Last Name *</label>
+            <input id="lastName" name="lastName" type="text" maxlength="50" required />
+
+            <label for="email">Email *</label>
+            <input id="email" name="email" type="email" maxlength="100" required />
+
+            <label for="phone">Phone</label>
+            <input id="phone" name="phone" type="text" maxlength="15" placeholder="+1234567890" />
+
+            <label>Gender *</label>
+            <div>
+                <label class="inline"><input type="radio" name="gender" value="male" required /> Male</label>
+                <label class="inline"><input type="radio" name="gender" value="female" /> Female</label>
+                <label class="inline"><input type="radio" name="gender" value="other" /> Other</label>
+            </div>
+
+            <label for="dob">Date of Birth *</label>
+            <input id="dob" name="dob" type="date" required />
+
+            <label for="address">Address</label>
+            <textarea id="address" name="address" maxlength="200" rows="3"></textarea>
+        </fieldset>
+
+        <!-- Academic Information -->
+        <fieldset>
+            <legend>Academic Info</legend>
+
+            <label for="highSchool">High School / Previous Institution *</label>
+            <input id="highSchool" name="highSchool" type="text" maxlength="100" required />
+
+            <label for="gradYear">Graduation Year *</label>
+            <input id="gradYear" name="gradYear" type="text" maxlength="4" class="small" required placeholder="e.g. 2024" />
+
+            <label for="gpa">GPA (or Percentage) *</label>
+            <input id="gpa" name="gpa" type="text" maxlength="10" class="small" required placeholder="e.g. 3.75 or 85%" />
+
+            <label>Interests (select all that apply)</label>
+            <div>
+                <label class="inline"><input type="checkbox" name="interests" value="research" /> Research</label>
+                <label class="inline"><input type="checkbox" name="interests" value="sports" /> Sports</label>
+                <label class="inline"><input type="checkbox" name="interests" value="clubs" /> Clubs</label>
+                <label class="inline"><input type="checkbox" name="interests" value="volunteer" /> Volunteer</label>
+            </div>
+        </fieldset>
+
+        <!-- Course / Department Selection -->
+        <fieldset>
+            <legend>Preferred Program</legend>
+
+            <label for="program">Choose a Course *</label>
+            <select id="program" name="program" required>
+                <option value="">-- Select Program --</option>
+                <option value="bsc_cs">B.Sc. Computer Science</option>
+                <option value="beng_ce">B.Eng. Civil Engineering</option>
+                <option value="bba">BBA</option>
+                <option value="bs_bio">BSc Biology</option>
+                <option value="ba_history">BA History</option>
+            </select>
+
+            <label for="intake">Preferred Intake</label>
+            <select id="intake" name="intake">
+                <option value="fall">Fall</option>
+                <option value="spring">Spring</option>
+                <option value="summer">Summer</option>
+            </select>
+        </fieldset>
+
+        <!-- Documents -->
+        <fieldset>
+            <legend>Required Documents</legend>
+
+            <label for="photo">Recent Photo (optional)</label>
+            <input id="photo" name="photo" type="file" accept="image/*" />
+
+            <label for="transcript">Transcript / Marksheet (PDF) *</label>
+            <input id="transcript" name="transcript" type="file" accept=".pdf" required />
+
+            <label for="resume">Resume/CV (PDF/DOC)</label>
+            <input id="resume" name="resume" type="file" accept=".pdf,.doc,.docx" />
+        </fieldset>
+
+        <div class="buttons">
+            <button type="submit">Submit Application</button>
+            <button type="reset">Reset</button>
+        </div>
+    </form>
+</body>
+</html>
